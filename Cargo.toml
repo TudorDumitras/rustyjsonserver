@@ -14,7 +14,7 @@ tracing-subscriber = { version = "0.3", features = ["fmt", "env-filter"] }
 tower-lsp = "0.20"
 
 [[bin]]
-name = "rjserver"
+name = "rustyjsonserver"
 path = "src/main.rs"
 
 [[bin]]

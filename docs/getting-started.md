@@ -36,9 +36,9 @@ Create **`config.json`**:
 
 ## 3. Start the server
 
-```
-rjserver.exe serve --config config.json
-```
+* As Binary: `rjserver.exe serve --config config.json`
+
+* As Docker image: build image `docker build -t <IMAGE_NAME> .` , run image  `docker run --rm -p 8080:8080 <IMAGE_NAME>`
 
 Access:
 
