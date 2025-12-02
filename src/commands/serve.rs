@@ -36,7 +36,7 @@ pub async fn run(args: ServeArgs) -> Result<(), Box<dyn Error>> {
         watcher::spawn_watcher(manager.clone());
     }
 
-    let addr = format!("127.0.0.1:{}", manager.port());
+    let addr = format!("0.0.0.0:{}", manager.port());
     info!(%addr, "starting HTTP server");
     
     server::run(&addr, manager.routes_handle()).await?;
